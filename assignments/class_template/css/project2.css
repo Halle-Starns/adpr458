@@ -81,6 +81,11 @@ img {
     font-family: 'Jost', sans-serif;
     font-weight: 300;
 }
+.books {
+    color: var(--primary_color);
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 3.5rem;
+}
 .bestselling {
     color: #4D4D4D; 
     font-family: 'Tenor Sans', sans-serif;
