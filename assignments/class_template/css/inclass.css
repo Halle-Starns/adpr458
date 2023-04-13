@@ -11,8 +11,19 @@
 .yellow {
     background-color: var(--highlight_color);
 }
+.white_text {
+    color: white;
+}
 .center {
     text-align: center;
+}
+.work img {
+}
+.work {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin: 0 auto;
 }
 * {
     box-sizing: border-box;
