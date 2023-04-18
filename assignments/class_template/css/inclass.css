@@ -17,8 +17,8 @@
 .center {
     text-align: center;
 }
-.work img {
-}
+/*.work img {
+} */
 .work {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
