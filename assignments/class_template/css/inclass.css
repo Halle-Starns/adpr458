@@ -49,6 +49,25 @@ img {
     max-width: 100%; /* This makes all your images responsive */
 }
 
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li a {
+    color: var(--neutral_light);
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding: 2rem 1rem;
+}
+nav li a:hover {
+    
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
