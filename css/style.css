@@ -5,6 +5,31 @@
     --neutral_grey: #747e83;
     --neutral_light: #ffffff;
 }
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+.img_right {
+    float: right;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    margin: 0;
+}
+
 h1 {
     color: black;
     font-family: 'Tenor Sans', sans-serif;
@@ -27,6 +52,9 @@ p {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
+img {
+    max-width: 100%; /* This makes all your images responsive */
+}
 .name {
     color: black;
     font-family: 'Abril Fatface', cursive;
@@ -39,15 +67,6 @@ p {
     color: var(--neutral_grey);
 }
 
-.center {
-    text-align: center;
-}
-.right {
-    text-align: right;
-}
-.img_right {
-    float: right;
-}
 ul li {
     display: inline;
     float: right;
@@ -57,23 +76,6 @@ li {
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-right: 1rem;
-}
-.work {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin: 0 auto;
-}
-
-* {
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-body {
-    margin: 0;
-}
-img {
-    max-width: 100%; /* This makes all your images responsive */
 }
 .container {
     display: grid;
