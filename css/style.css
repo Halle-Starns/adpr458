@@ -24,7 +24,8 @@
 
 * {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
+    /* font-family: sans-serif; */
 }
 body {
     margin: 0;
@@ -55,6 +56,16 @@ p {
 img {
     max-width: 100%; /* This makes all your images responsive */
 }
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+}
+/*
+a:hover {
+    color: #6e8fc7;
+    text-decoration: underline;
+}
+*/
 .name {
     color: black;
     font-family: 'Abril Fatface', cursive;
@@ -66,6 +77,12 @@ img {
 .grey_text {
     color: var(--neutral_grey);
 }
+
+/*
+.align {
+    
+}
+*/
 
 ul li {
     display: inline;
@@ -95,6 +112,49 @@ li {
 .container > *, 
 .container_lg > * {
     grid-column: span 12;
+}
+
+/* Components */
+/* Quantity and Cart button not vertically aligned, fixed with padding */
+.quantity {
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: .93rem .5rem;
+    border: black 1px solid;
+    border-radius: 0rem;
+    display: inline-block;
+    margin: 0 auto 3rem;
+    transition: background-color 0.5s ease;
+}
+.button:link, .button:visited {
+    color: white;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 1.75rem;
+    border: black 1px solid;
+    border-radius: 0rem;
+    display: inline-block;
+    margin: 1.5rem .75rem 0;
+    transition: background-color 0.5s ease;
+}
+.button:hover {
+    background-color: #333333;
+}
+.card {
+    text-align: center;
+    margin: 1rem;
+    padding-bottom: 2rem;
+    border: black 1px solid;
+}
+.card-title {
+    margin: 0.75rem 0 0 0;
+    padding: 0 2rem 0.5rem;
+}
+.card-text {
+    margin: 0.5rem 0 1rem 0;
+    padding: 0 2rem 0.5rem;
 }
 
 /* Media Queries for larger screens than 768px */
