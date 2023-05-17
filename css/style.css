@@ -5,6 +5,9 @@
     --neutral_grey: #747e83;
     --neutral_light: #ffffff;
 }
+.tan {
+    background-color: var(--highlight_color);
+}
 .center {
     text-align: center;
 }
@@ -84,6 +87,13 @@ a:hover {
 }
 */
 
+.header {
+    padding: 0rem; 
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
 ul li {
     display: inline;
     float: right;
