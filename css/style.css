@@ -63,10 +63,11 @@ a:link, a:visited {
     color: black;
     text-decoration: none;
 }
-/*
+/* 
 a:hover {
-    color: #6e8fc7;
+    color: black;
     text-decoration: underline;
+    text-decoration-thickness: 0.05rem;
 }
 */
 .name {
@@ -80,12 +81,6 @@ a:hover {
 .grey_text {
     color: var(--neutral_grey);
 }
-
-/*
-.align {
-    
-}
-*/
 
 .header {
     padding: 0rem; 
@@ -104,20 +99,30 @@ li {
     padding-bottom: 1rem;
     padding-right: 1rem;
 }
+.ul_social {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.breadcrumb {
+    display: inline;
+    float: left;
+}
 .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1.5rem;
     margin: 2rem auto;
     width: min(95%, 75rem);
-    /* background-color: tan; */
 }
 .container_lg {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1.5rem;
     margin: 0 auto;
-    /* background-color: blue; */
 }
 .container > *, 
 .container_lg > * {
@@ -152,6 +157,21 @@ li {
 .button:hover {
     background-color: #333333;
 }
+.button_listing:link, .button_listing:visited {
+    color: white;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 1.75rem;
+    border: black 1px solid;
+    border-radius: 0rem;
+    display: inline-block;
+    margin: .5rem 0rem;
+    transition: background-color 0.5s ease;
+}
+.button_listing:hover {
+    background-color: #333333;
+}
 .card {
     text-align: center;
     margin: 1rem;
@@ -165,6 +185,13 @@ li {
 .card-text {
     margin: 0.5rem 0 1rem 0;
     padding: 0 2rem 0.5rem;
+}
+
+.spacing {
+    margin: 2rem 0rem;
+}
+.spacing_listing {
+    margin: 0rem 0rem 2rem;
 }
 
 /* Media Queries for larger screens than 768px */
