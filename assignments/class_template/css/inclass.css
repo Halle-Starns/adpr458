@@ -49,7 +49,7 @@ h3 {
     color: var(--neutral_grey); 
 }
 p {
-    color: var(--neutral_grey);
+    color: black;
     line-height: 2rem;
 }
 img {
